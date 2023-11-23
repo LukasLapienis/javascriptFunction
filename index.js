@@ -2,14 +2,14 @@
 
 // 1
 
-    function hello() {
-        let greet = "hello";
-        return greet;
-    }
+function hello() {
+    let greet = "hello";
+    return greet;
+}
     
-    function greeting(vardas, greet) {
-        console.log(`${greet}, ${vardas}!`);
-    }
+function greeting(vardas, greet) {
+    console.log(`${greet}, ${vardas}!`);
+}
     
 greeting("Lukas", hello());
 greeting("Baris", hello());
@@ -45,12 +45,10 @@ function fizzAndBuzz(word) {
     else if (word == "buzz") {
         console.log("fizz");
     }
-
     else {
         console.log("Please provide fizz or buzz");
     }
 }
-
 
 fizzAndBuzz("buzz");
 
