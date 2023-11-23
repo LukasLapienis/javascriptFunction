@@ -39,10 +39,10 @@ console.log(bigger(5,5));
 // 3)
 
 function fizzAndBuzz(word) {
-    if (word == "fizz") {
+    if (word === "fizz") {
         console.log("bazz");
     }
-    else if (word == "buzz") {
+    else if (word === "buzz") {
         console.log("fizz");
     }
     else {
@@ -54,9 +54,9 @@ fizzAndBuzz("buzz");
 
 // 4)
 
-function isTriangle(x, y, sum) {
+function isTriangle(x, y, a) {
     let ats;
-    if ((x + y > sum) && (x + sum > y) && (y + sum > x)) {
+    if ((x + y > a) && (x + a > y) && (y + a > x)) {
         ats = "trikampis gali buti sudarytas";
     }
     else {
@@ -91,7 +91,7 @@ alert(plotas());
 
 // 6)
 
-function isSeven(x) {return x == "7" ? true : false;}
+function isSeven(x) {return x === "7" ? true : false;}
 
 console.log(isSeven(7));
 
