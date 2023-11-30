@@ -53,7 +53,7 @@ const leFamily = {
 let count = 1
 for (let key in leFamily) {
     if (leFamily[key] > 65) {
-        count = count +1;
+        count = count ++;
         }
     }
 console.log(count)
