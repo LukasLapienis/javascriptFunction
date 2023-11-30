@@ -1,8 +1,6 @@
 'use strict'
 
-// 1) nebaigta
-
-
+// 1)
 
 function findNegative() {
     
