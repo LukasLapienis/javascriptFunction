@@ -15,8 +15,6 @@ function findNegative() {
 
 findNegative();
 
-
-
 // 2)
 
 function printAllExcept3(begin,end) {
@@ -133,4 +131,3 @@ do {
     }
 } while (sk !== 0)
 console.log(suma);
-
