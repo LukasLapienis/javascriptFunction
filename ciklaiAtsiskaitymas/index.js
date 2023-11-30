@@ -7,13 +7,13 @@ function findNegative() {
     for (;;) {
         let numberInput = prompt('iveskite skaiciu, jeigu bus neigiamas atspausdinsiu ir baigsiu cikla')
         if (numberInput < 0) {
-            console.log(numberInput)
+            console.log(numberInput);
             break;
         }
     }
 }
 
-findNegative()
+findNegative();
 
 
 
@@ -28,7 +28,7 @@ function printAllExcept3(begin,end) {
     }
 }
 
-printAllExcept3(1,100)
+printAllExcept3(1,100);
 
 // 3)
 
@@ -39,7 +39,7 @@ function toCube(begin,end) {
     }
 }
 
-toCube(2,12)
+toCube(2,12);
 
 // 4)
 
@@ -63,33 +63,33 @@ let moksleivis = {
     pavarde: "Jonaitis",
     amzius: 25,
     miestas: "Kaunas",
-}
+};
 
-let countObject = 0
+let countObject = 0;
 
 for (let count in moksleivis) {
     countObject ++
 }
 
-console.log(countObject)
+console.log(countObject);
 
 // 6)
 
-let splitSentence = prompt("iveskite sakini ir isskirsiu atskirais zodziais").split(" ")
+let splitSentence = prompt("iveskite sakini ir isskirsiu atskirais zodziais").split(" ");
 for (let word of splitSentence) {
-    console.log(word)
+    console.log(word);
 }
 
 // 7)
 
-let sentence = prompt("iveskite sakini ir pasakysiu kiek simboliu")
-let characters = 0
+let sentence = prompt("iveskite sakini ir pasakysiu kiek simboliu");
+let characters = 0;
 
 for (let character of sentence) {
-    characters ++
+    characters ++;
 }
 
-console.log(`simboliu kiekis su ciklu: ${characters}, simboliu kiekis su length: ${sentence.length}`)
+console.log(`simboliu kiekis su ciklu: ${characters}, simboliu kiekis su length: ${sentence.length}`);
 
 // 8)
 
@@ -97,45 +97,40 @@ console.log(`simboliu kiekis su ciklu: ${characters}, simboliu kiekis su length:
 function printAllEven(begin,end) {
     while (begin <= end) {
         if (begin % 2 == 0) {
-            console.log(begin)
+            console.log(begin);
         }
-        begin ++
+        begin ++;
     }
 }
 
 printAllEven(20,50)
 
-9)
+// 9)
 
 while (true) {
     let sk = parseInt(prompt("iveskite skaiciu, jeigu bus nelyginis nutrauksiu cikla"))
     if (isNaN(sk)) {
-        alert("blogai ivestas skaicius")
+        alert("blogai ivestas skaicius");
     }
     else if (sk % 2 !== 0) {
-        alert("Ivestas nelyginis skaiciu")
-        break
+        alert("Ivestas nelyginis skaiciu");
+        break;
     }
 }
 
-//////////////////////// 10 //////////////////////////////////
+// 10)
 
-// let sum = 0
-// let num = 0
+let suma = 0;
+let sk;
 
-// do {
-//     num = parseInt(prompt("Iveskite skaiciu"))
-//     sum += num
-// } while (num !== 0)
+do {
+    sk = parseInt(prompt("Iveskite skaiciu, jei teigiami sudesiu, jei nulis baigsiu cikla ir isspausdinsiu visu ivestu teigiamu skaiciu suma"));
+    if (isNaN(sk)) {
+        alert("blogai ivestas skaicius");
+    }
+    else if (sk > 0) {
+        suma += sk;
+    }
+} while (sk !== 0)
+console.log(suma);
 
-// console.log(sum)
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////// nutraukimoSkaicius = 0. Kad nepridetu nutraukimoSkaiciaus galima butu daryti taip:  /////////////////////
-////                                                                                                ///////////////
-//// do {                                                                                           ///////////////
-////     num = parseInt(prompt("Iveskite skaiciu"))                                                 ///////////////
-////     if (num !== nutraukimoSkaicius) {                                                          ///////////////
-////         sum += num                                                                             ///////////////
-////     }                                                                                          ///////////////
-//// } while (num !== nutraukimoSkaicius)  
